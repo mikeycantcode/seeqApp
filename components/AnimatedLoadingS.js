@@ -56,7 +56,7 @@ const AnimatedLoadingS = () => {
                     { opacity: animatedValue },
                 ]}
             >
-                SEEQ
+                DDNOW
             </Animated.Text>
         </View>
     );

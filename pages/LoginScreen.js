@@ -25,7 +25,7 @@ const LoginScreen = ({ onLogin, onSignup, handleGoogleLogin }) => {
             />
             <StaticLoadingScreen />
             <Text style={styles.termsText}>
-                By signing up, you agree to the terms and conditions laid out at seeq.prod.app
+                By signing up, you agree to the terms and conditions laid out at ddnow.prod.app
             </Text>
             <Animated.View style={{ opacity: fadeAnim }}>
                 <GoogleAuthButton onPress={handleGoogleLogin} />

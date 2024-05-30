@@ -23,7 +23,7 @@ if (!firebase.apps.length) {
 }
 
 GoogleSignin.configure({
-    webClientId: '613503853683-a4g2vdgob117l049fesgfb0m2o7bpfdo.apps.googleusercontent.com', // Your web client ID here
+    webClientId: '1030245507743-9a10m48g79hntbmcd0gs6h37sf1fflh6.apps.googleusercontent.com', // Your web client ID here
 });
 
 // registerRootComponent calls AppRegistry.registerComponent('main', () => App);

@@ -29,8 +29,8 @@ const StaticLoadingScreen = () => {
     }
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>SEEQ</Text>
-            <Text style={styles.slogantext}>type in your type, we do the rest</Text>
+            <Text style={styles.text}>DDNOW</Text>
+            <Text style={styles.slogantext}>party rides, reimagined</Text>
         </View>
     );
 };

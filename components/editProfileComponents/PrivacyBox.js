@@ -31,7 +31,7 @@ const EditBox = ({ profile }) => {
             <PrivacyBar title="Display Name" content="userDataStore.name" />
             <PrivacyBar title="Age" content="userDataStore.age" />
             <PrivacyBar title="Location" content="stolen" />
-            <PrivacyBar title="Sex" content="I have lots of it" />
+            <PrivacyBar title="Sex" content="I have lots of it (no i was lying im scared of women)" />
             {/* Add as many PrivacyBars as you want here */}
         </View>
     );
