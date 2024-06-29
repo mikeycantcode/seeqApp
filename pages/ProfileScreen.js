@@ -62,24 +62,16 @@ const ProfileScreen = () => {
 
     }, [isEditing, showPrivacy]);
 
-    const profile = {
-        userId: 2020292393,
-        imageLocations: [require('../assets/testing/test2.jpeg'), require('../assets/testing/test1.jpg'), require('../assets/testing/IMG_0310.jpg')],
-        name: 'Kevin',
-        bio: 'The women call me vest kid',
-        age: '23'
-    };
-
     return (
         <View style={styles.otherScreens}>
             <Animated.View style={{ opacity: fadeAnimProfile }}>
-                {!isEditing && !showPrivacy && <ProfileBox profile={profile} />}
+
             </Animated.View>
             <Animated.View style={{ opacity: fadeAnimEdit }}>
-                {isEditing && <EditBox profile={profile} />}
+
             </Animated.View>
             <Animated.View style={{ opacity: fadeAnimPrivacy }}>
-                {showPrivacy && <PrivacyBox profile={profile} />}
+
             </Animated.View>
             <View style={styles.buttonContainer}>
                 <EditProfileButton isEditing={isEditing} setIsEditing={setIsEditing} />
