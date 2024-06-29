@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, StyleSheet, Dimensions } from 'react-native';
-import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
+import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 import TopBar from '../components/TopBar';
-
 
 const HomeScreen = () => {
     const [region, setRegion] = useState({
@@ -13,8 +12,20 @@ const HomeScreen = () => {
     });
 
     useEffect(() => {
-        
-        navigator.geolocation.getCurrentPosition(...);
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                const { latitude, longitude } = position.coords;
+                setRegion((prevRegion) => ({
+                    ...prevRegion,
+                    latitude,
+                    longitude,
+                }));
+            },
+            (error) => {
+                console.error(error);
+            },
+            { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 }
+        );
     }, []);
 
     return (
